@@ -29,6 +29,7 @@
     "languages": [
       "pt-br",
       "en"
-    ]
+    ],
+    "serviceDiscoveryType": false
   }
 }
