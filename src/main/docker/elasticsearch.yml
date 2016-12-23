@@ -1,0 +1,10 @@
+version: '2'
+services:
+    agenda-elasticsearch:
+        container_name: agenda-elasticsearch
+        image: elasticsearch:2.4.1
+        # volumes:
+        #     - ~/volumes/jhipster/agenda/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
