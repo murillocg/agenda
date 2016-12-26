@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span data-translate="agendaApp.cliente.detail.title">Cliente</span> {{vm.cliente.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="agendaApp.cliente.nome">Nome</span></dt>
+        <dd>
+            <span>{{vm.cliente.nome}}</span>
+        </dd>
+        <dt><span data-translate="agendaApp.cliente.telefone">Telefone</span></dt>
+        <dd>
+            <span>{{vm.cliente.telefone}}</span>
+        </dd>
+        <dt><span data-translate="agendaApp.cliente.email">Email</span></dt>
+        <dd>
+            <span>{{vm.cliente.email}}</span>
+        </dd>
+        <dt><span data-translate="agendaApp.cliente.dataCadastro">Data Cadastro</span></dt>
+        <dd>
+            <span>{{vm.cliente.dataCadastro | date:'short'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="cliente-detail.edit({id:vm.cliente.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

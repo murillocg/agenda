@@ -1,0 +1,46 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "cliente",
+            "otherEntityName": "cliente",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "",
+            "relationshipName": "servico",
+            "otherEntityName": "servico",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "dataHoraInicio",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dataHoraFim",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "observacoes",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "situacao",
+            "fieldType": "SituacaoAgendamento",
+            "fieldValues": "AGENDADO,REALIZADO,CANCELADO"
+        }
+    ],
+    "changelogDate": "20161226130010",
+    "entityTableName": "agendamento",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

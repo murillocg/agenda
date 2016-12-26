@@ -1,0 +1,23 @@
+{
+    "agendaApp": {
+        "servico" : {
+            "home": {
+                "title": "Servicos",
+                "createLabel": "Create a new Servico",
+                "createOrEditLabel": "Create or edit a Servico",
+                "search": "Search for Servico"
+            },
+            "created": "A new Servico is created with identifier {{ param }}",
+            "updated": "A Servico is updated with identifier {{ param }}",
+            "deleted": "A Servico is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Servico {{ id }}?"
+            },
+            "detail": {
+                "title": "Servico"
+            },
+            "descricao": "Descricao",
+            "descricaoDetalhada": "Descricao Detalhada"
+        }
+    }
+}

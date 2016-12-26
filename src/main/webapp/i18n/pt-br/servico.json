@@ -1,0 +1,23 @@
+{
+    "agendaApp": {
+        "servico" : {
+            "home": {
+                "title": "Servicos",
+                "createLabel": "Criar novo Servico",
+                "createOrEditLabel": "Criar ou editar Servico",
+                "search": "Pesquisar por Servico"
+            },
+            "created": "Um novo Servico é criado com o identificador {{ param }}",
+            "updated": "Um Servico é atualizado com o identificador {{ param }}",
+            "deleted": "Um Servico é deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Servico {{ id }}?"
+            },
+            "detail": {
+                "title": "Servico"
+            },
+            "descricao": "Descricao",
+            "descricaoDetalhada": "Descricao Detalhada"
+        }
+    }
+}

@@ -1,0 +1,45 @@
+
+<div>
+    <h2><span data-translate="agendaApp.agendamento.detail.title">Agendamento</span> {{vm.agendamento.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="agendaApp.agendamento.dataHoraInicio">Data Hora Inicio</span></dt>
+        <dd>
+            <span>{{vm.agendamento.dataHoraInicio | date:'short'}}</span>
+        </dd>
+        <dt><span data-translate="agendaApp.agendamento.dataHoraFim">Data Hora Fim</span></dt>
+        <dd>
+            <span>{{vm.agendamento.dataHoraFim | date:'short'}}</span>
+        </dd>
+        <dt><span data-translate="agendaApp.agendamento.situacao">Situacao</span></dt>
+        <dd>
+            <span data-translate="{{'agendaApp.SituacaoAgendamento.' + vm.agendamento.situacao}}">{{vm.agendamento.situacao}}</span>
+        </dd>
+        <dt><span data-translate="agendaApp.agendamento.cliente">Cliente</span></dt>
+        <dd>
+            <a ui-sref="cliente-detail({id:vm.agendamento.cliente.id})">{{vm.agendamento.cliente.nome}}</a>
+        </dd>
+        <dt><span data-translate="agendaApp.agendamento.servicos">Servicos</span></dt>
+        <dd>
+            <span ng-repeat="servico in vm.agendamento.servicos">
+                <a class="label label-primary" ui-sref="servico-detail({id: servico.id})">{{servico.descricao}}</a>
+            </span>
+        </dd>
+        <dt><span data-translate="agendaApp.agendamento.observacoes">Observacoes</span></dt>
+        <dd>
+            <span>{{vm.agendamento.observacoes}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="agendamento-detail.edit({id:vm.agendamento.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -29,8 +29,12 @@
             <!-- Angular views -->
         </div>
 
-        <div class="footer" ng-cloak>
-            <p data-translate="footer">This is your footer</p>
+        <div class="footer hidden-xs" ng-cloak>
+            <p data-translate="footer">
+                <strong>21-Points Health</strong> | An application developed for a better life and
+                <a href='http://www.jhipster-book.com' target='_blank'>The JHipster Mini-Book</a> |
+                By <a href='http://raibledesigns.com' target='_blank'>Matt Raible</a>                
+            </p>
         </div>
     </div>
 
@@ -69,6 +73,7 @@
     <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.js"></script>
     <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
     <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+    <script src="bower_components/angular-input-masks/angular-input-masks-standalone.js"></script>
     <!-- endinject -->
     <!-- endbuild -->
 
@@ -94,7 +99,28 @@
     <script src="app/layouts/error/error.state.js"></script>
     <script src="app/home/home.state.js"></script>
     <script src="app/home/home.controller.js"></script>
+    <script src="app/entities/servico/servico-dialog.controller.js"></script>
+    <script src="app/entities/servico/servico-detail.controller.js"></script>
+    <script src="app/entities/servico/servico-delete-dialog.controller.js"></script>
+    <script src="app/entities/servico/servico.state.js"></script>
+    <script src="app/entities/servico/servico.service.js"></script>
+    <script src="app/entities/servico/servico.search.service.js"></script>
+    <script src="app/entities/servico/servico.controller.js"></script>
     <script src="app/entities/entity.state.js"></script>
+    <script src="app/entities/cliente/cliente-dialog.controller.js"></script>
+    <script src="app/entities/cliente/cliente-detail.controller.js"></script>
+    <script src="app/entities/cliente/cliente-delete-dialog.controller.js"></script>
+    <script src="app/entities/cliente/cliente.state.js"></script>
+    <script src="app/entities/cliente/cliente.service.js"></script>
+    <script src="app/entities/cliente/cliente.search.service.js"></script>
+    <script src="app/entities/cliente/cliente.controller.js"></script>
+    <script src="app/entities/agendamento/agendamento-dialog.controller.js"></script>
+    <script src="app/entities/agendamento/agendamento-detail.controller.js"></script>
+    <script src="app/entities/agendamento/agendamento-delete-dialog.controller.js"></script>
+    <script src="app/entities/agendamento/agendamento.state.js"></script>
+    <script src="app/entities/agendamento/agendamento.service.js"></script>
+    <script src="app/entities/agendamento/agendamento.search.service.js"></script>
+    <script src="app/entities/agendamento/agendamento.controller.js"></script>
     <script src="app/components/util/truncate-words.filter.js"></script>
     <script src="app/components/util/truncate-characters.filter.js"></script>
     <script src="app/components/util/sort-by.directive.js"></script>

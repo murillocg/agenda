@@ -1,0 +1,27 @@
+{
+    "agendaApp": {
+        "agendamento" : {
+            "home": {
+                "title": "Agendamentos",
+                "createLabel": "Create a new Agendamento",
+                "createOrEditLabel": "Create or edit a Agendamento",
+                "search": "Search for Agendamento"
+            },
+            "created": "A new Agendamento is created with identifier {{ param }}",
+            "updated": "A Agendamento is updated with identifier {{ param }}",
+            "deleted": "A Agendamento is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Agendamento {{ id }}?"
+            },
+            "detail": {
+                "title": "Agendamento"
+            },
+            "dataHoraInicio": "Data Hora Inicio",
+            "dataHoraFim": "Data Hora Fim",
+            "observacoes": "Observacoes",
+            "situacao": "Situacao",
+            "cliente": "Cliente",
+            "servico": "Servico"
+        }
+    }
+}

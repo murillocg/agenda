@@ -1,0 +1,22 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "descricao",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "descricaoDetalhada",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20161226130011",
+    "entityTableName": "servico",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

@@ -7,6 +7,9 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entidades",
+                "cliente": "Cliente",
+                "agendamento": "Agendamento",
+                "servico": "Servico",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
@@ -119,5 +122,5 @@
         "emailexists": "Este email já está cadastrado!",
         "idexists": "Novo(a) {{entityName}} não pode ter uma ID"
     },
-    "footer": "Este é o seu rodapé"
+    "footer": "<strong>AgendaApp</strong> | Um sistema feito para agendamentos | Por <a href='https://github.com/murillocg' target='_blank'>Murillo Goulart</a>"
 }

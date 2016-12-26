@@ -1,0 +1,26 @@
+{
+    "agendaApp": {
+        "cliente" : {
+            "home": {
+                "title": "Clientes",
+                "createLabel": "Criar novo Cliente",
+                "createOrEditLabel": "Criar ou editar Cliente",
+                "search": "Pesquisar por Cliente"
+            },
+            "created": "Um novo Cliente é criado com o identificador {{ param }}",
+            "updated": "Um Cliente é atualizado com o identificador {{ param }}",
+            "deleted": "Um Cliente é deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Cliente {{ id }}?"
+            },
+            "detail": {
+                "title": "Cliente"
+            },
+            "nome": "Nome",
+            "telefone": "Telefone",
+            "email": "Email",
+            "dataCadastro": "Data Cadastro",
+            "cliente": "Cliente"
+        }
+    }
+}

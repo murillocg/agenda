@@ -1,0 +1,10 @@
+{
+    "agendaApp": {
+        "SituacaoAgendamento" : {
+            "null": "",
+            "AGENDADO": "AGENDADO",
+            "REALIZADO": "REALIZADO",
+            "CANCELADO": "CANCELADO"
+        }
+    }
+}
